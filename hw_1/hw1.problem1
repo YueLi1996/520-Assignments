@@ -1,0 +1,41 @@
+Script started on 2022-01-20 07:47:09+00:00 [TERM="xterm" TTY="/dev/pts/0" COLUMNS="231" LINES="25"]
+# echo "Hello 2022 and the new quarter!"
+Hello 2022 and the new quarter!
+# date
+Thu Jan 20 07:47:32 UTC 2022
+# pwd
+/source
+# cd ~
+# pwd
+/root
+# ls
+# mkdir temp
+# mv temp temp_new
+# ls
+temp_new
+# cd temp_new
+# pwd
+/root/temp_new
+# touch file5
+# ls
+file5
+# mv file5 test
+# ls
+test
+# cd ..
+# pwd
+/root
+# rm -r temp_new
+# ls
+# echo "It's a secret!" > secretfile
+# ls
+secretfile
+# cat secretfile
+It's a secret!
+# chmod -w secretfile
+# ls -l
+total 4
+-r--r--r-- 1 root root 15 Jan 20 07:50 secretfile
+# exit
+
+Script done on 2022-01-20 07:52:38+00:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,16 @@
+For problem1 step 15, if I add more text using cat command in script, it still works because I am using root user who 
+do not need to obey permission. In script I changed attribution of secretfile which is -r--r--r-- (read-only).
+
+The following is what I did out of script and it works well
+
+root@18a2d40eeddb:/source# echo "it's a secret!" > secretfile
+root@18a2d40eeddb:/source# ls
+hw1.problem1  hw_1  secretfile
+root@18a2d40eeddb:/source# chmod -w secretfile
+root@18a2d40eeddb:/source# ls -l
+total 4
+-rw-r--r-- 1 root root  720 Jan 20 07:52 hw1.problem1
+drwxrwxrwx 1 root root 4096 Jan 20 07:44 hw_1
+-r--r--r-- 1 root root   15 Jan 20 07:56 secretfile
+root@18a2d40eeddb:/source# cat "add more text" >> secretfile
+bash: secretfile: Permission denied
