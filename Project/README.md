@@ -2,6 +2,10 @@ Boring Robot
 ===
 This is a boring demo that a robot solves a maze.
 
+Challenge and Solve
+===
+The challenge is determining where should robot turns to when it reaches a corner. The soultion is using three sensors, one points to x-positive directions and the other points to both positive and negative direction of y. Make sure robot turns to the direction that the bigger sensor_vlaue holds.
+
 Setting Up Docker
 ===
 
