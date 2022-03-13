@@ -1,0 +1,4 @@
+*.o
+*.so
+*.txt
+.DS_Store
